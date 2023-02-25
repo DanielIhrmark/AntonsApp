@@ -1,2 +1,2 @@
 # AntonsApp
-Vocabulary trainer fr upper-secondary EAL
+Vocabulary trainer for upper-secondary EAL
