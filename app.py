@@ -35,7 +35,7 @@ def main():
 	# Vocabulary trainer
 	with tab1:
 		with st.form('vocab_form'):
-			st.subheader("Translate the word!")
+			st.subheader("Translate the words!")
 			userNumber = st.number_input("Number of words", 10)
 
 			submitted = st.form_submit_button("Generate vocabulary list")
