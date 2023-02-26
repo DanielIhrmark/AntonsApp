@@ -13,7 +13,7 @@ import pandas as pd
 # Set tabs up
 tab1, tab2, tab3 = st.tabs(["Vocabulary Trainer", "Words", "Other Exercises"])
 
-df = pd.read_csv('C:/Users/gremi/Desktop/streamlit_apps/VocabApp/vocab_data.csv')
+df ('./vocab_data.csv')
 df = df.drop('class', axis=1)
 colNames = list(df.columns.values)
 for column in colNames:
