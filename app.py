@@ -35,7 +35,7 @@ def main():
 	with tab1:
 		with st.form('vocab_form'):
 			st.subheader("Translate the words!")
-			userNumber = st.number_input("Number of words")
+			userNumber = st.number_input("Number of words", step=1.00)
 
 			submitted = st.form_submit_button("Generate vocabulary list")
 			if submitted:
