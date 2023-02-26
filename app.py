@@ -19,7 +19,6 @@ colNames = list(df.columns.values)
 for column in colNames:
 	df[column] = df[column].str.lower()
 
-@st.cache_data
 def vocablist(number):
 	newnumber = int(number)
 	newdf = df.sample(n=newnumber)
