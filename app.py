@@ -11,7 +11,7 @@ import pandas as pd
 
 
 # Set tabs up
-tab1, tab2, tab3 = st.tabs(["Vocabulary Trainer", "Words", "Other Exercises"])
+tab1, tab2 = st.tabs(["Vocabulary Trainer", "Words"])
 
 df = pd.read_csv('./vocab_data.csv')
 df = df.drop('class', axis=1)
