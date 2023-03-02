@@ -1,6 +1,6 @@
 """
 Description
-Anton's vocabulary trainer, based on the 1500 most common nouns
+Vocabulary trainer, based on the 1500 most common nouns
 
 
 """
@@ -28,7 +28,7 @@ def main():
 	""" web interface """
 
 	# Title
-	st.sidebar.title("Anton's Vocabulary Trainer")
+	st.sidebar.title("Vocabulary Trainer")
 	st.sidebar.subheader("Learn new words quickly and easily!")
 
 	# Vocabulary trainer
