@@ -40,7 +40,7 @@ def main():
 			submitted = st.form_submit_button("Skapa ordlista")
 			if submitted:
 				vocabulary = vocablist(userNumber)
-				vocabulary.insert(0,"Svar", " ")
+				vocabulary.insert(0,"svar", " ")
 				maindf = vocabulary
 				st.experimental_data_editor(maindf.drop('swedish', axis=1))
 				
