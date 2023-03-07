@@ -11,7 +11,7 @@ import pandas as pd
 
 
 # Set tabs up
-tab1, tab2 = st.tabs(["Vocabulary Trainer", "Words"])
+tab0, tab1, tab2 = st.tabs(["Vokabulärträning", "Vocabulary Trainer", "Words"])
 
 df = pd.read_csv('./vocab_data.csv')
 df = df.drop('class', axis=1)
@@ -32,6 +32,21 @@ def main():
 	st.sidebar.subheader("Learn new words quickly and easily!")
 
 	# Vocabulary trainer
+	with tab0:
+		with st.form('vocab_form'):
+			st.subheader("Översätt orden!")
+			userNumber = st.number_input("Number of words", step=1.00)
+
+			submitted = st.form_submit_button("Skapa ordlista")
+			if submitted:
+				vocabulary = vocablist(userNumber)
+				vocabulary.insert(0,"Svar", " ")
+				maindf = vocabulary
+				st.experimental_data_editor(maindf.drop('swedish', axis=1))
+				
+				with st.expander("Facit"):
+					st.dataframe(vocabulary.drop('Answer', axis=1))
+	
 	with tab1:
 		with st.form('vocab_form'):
 			st.subheader("Translate the words!")
