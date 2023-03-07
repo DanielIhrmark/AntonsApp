@@ -45,7 +45,7 @@ def main():
 				st.experimental_data_editor(maindf.drop('swedish', axis=1))
 				
 				with st.expander("Facit"):
-					st.dataframe(vocabulary.drop('Answer', axis=1))
+					st.dataframe(vocabulary.drop('svar', axis=1))
 	
 	with tab1:
 		with st.form('vocab_form'):
