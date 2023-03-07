@@ -33,7 +33,7 @@ def main():
 
 	# Vocabulary trainer
 	with tab0:
-		with st.form('vocab_form'):
+		with st.form('swe_vocab_form'):
 			st.subheader("Översätt orden!")
 			userNumber = st.number_input("Number of words", step=1.00)
 
